@@ -29,7 +29,7 @@
           id="password"
           name="password"
           minlength="8"
-          pattern=""
+          pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
           required
         />
       </p>
