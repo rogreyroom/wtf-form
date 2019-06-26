@@ -13,22 +13,22 @@
         <h1 class="header__title">wtf-form</h1>
       </header>
       <form action="http://dev.cotenfrontend.pl" method="post" class="form">
-        <p>
+        <p class="form__fields">
           <label for="name">First name:</label>
           <input type="text" id="name" name="name" />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="username">Surname: <abbr title="required">*</abbr></label>
           <input id="username" type="text" name="username" />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="password">Password (8 characters minimum):</label>
           <input
             type="password"
@@ -40,12 +40,12 @@
           />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="date">Birthdate:</label>
           <input type="date" name="date" id="date" />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="phone">Enter your phone number:</label>
           <input
             type="tel"
@@ -56,7 +56,7 @@
           />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="url">Enter your GitHub URL:</label>
           <input
             type="url"
@@ -69,7 +69,7 @@
           />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="avatar">Choose a profile picture:</label>
           <input
             type="file"
@@ -79,7 +79,7 @@
           />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="range_number">What is your favorite number</label>
           <input
             type="range"
@@ -91,29 +91,39 @@
           />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="color">Pick a color:</label>
           <input type="color" name="color" id="color" />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="message">Tell me your story</label>
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </p>
 
-        <p>
-          <label for="like_1">I like movies</label>
-          <input type="checkbox" id="like_1" name="like_movie" value="1" />
+        <p class="form__fields form__fields--inline">
+          <input
+            type="checkbox"
+            id="like_movie"
+            name="like_movie"
+            value="movies"
+          />
+          <label for="like_movie">I like movies</label>
         </p>
 
-        <p>
-          <label for="like_2">I like books</label>
-          <input type="checkbox" id="like_2" name="like_book" value="2" />
+        <p class="form__fields form__fields--inline">
+          <input
+            type="checkbox"
+            id="like_book"
+            name="like_book"
+            value="books"
+          />
+          <label for="like_book">I like books</label>
         </p>
 
         <fieldset>
           <legend>Top movies</legend>
-          <p>
+          <p class="form__fields form__fields--inline">
             <input
               type="radio"
               name="movie"
@@ -122,11 +132,11 @@
             />
             <label for="movie_1">Black Panther(2018)</label>
           </p>
-          <p>
+          <p class="form__fields form__fields--inline">
             <input type="radio" name="movie" id="movie_2" value="Lady Bird" />
             <label for="movie_2">Lady Bird(2017)</label>
           </p>
-          <p>
+          <p class="form__fields form__fields--inline">
             <input
               type="radio"
               name="movie"
@@ -137,17 +147,17 @@
           </p>
         </fieldset>
 
-        <p>
+        <p class="form__fields">
           <label for="visit">Number of cinema visits (1-100)</label>
           <input type="number" name="visit" id="visit" min="1" max="100" />
         </p>
 
-        <p>
+        <p class="form__fields">
           <label for="riddle">WTF: bonus:</label>
           <input type="text" id="riddle" name="riddle" />
         </p>
 
-        <p>
+        <p class="form__fields">
           <input type="submit" value="Send Request" />
         </p>
       </form>
